@@ -31,4 +31,4 @@
   (*-iter a b 0))
 ; this should grow in steps as O(log n) and in space as O(log n)
 ; test:
-(*-i 3 0)
+(*-i 3 7)

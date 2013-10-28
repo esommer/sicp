@@ -34,7 +34,7 @@
   (* n n))
 (define (fast-expt-iter b n a)
   ; n is counter, a is product
-  (display "b: ") (display b) (display " n: ") (display n) (display " a: ") (display a) (display " ab^n: ")  (display (* a (expt-i b n))) (display "\n")
+  (display "b: ") (display b) (display " n: ") (display n) (display " a: ") (display a) (display " ab^n: ")  (display (* a (expt b n))) (display "\n")
   (cond ((= n 0) a)
         ((even? n) (fast-expt-iter (square b) (/ n 2) a))
         (else (fast-expt-iter b (- n 1) (* b a)))))

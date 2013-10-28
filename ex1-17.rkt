@@ -25,7 +25,7 @@
 ; multiplication by iterative successive addition:
 (define (*-rec a b)
   (cond ((= b 0) 0)
-        ((even? b) (double (*-rec a (/ b 2))))
+        ((even? b) (double (*-rec a (halve b))))
         (else (+ a (*-rec a (- b 1))))))
 ; this should grow in steps as O(log n) and in space as O(log n)
 ; test:
